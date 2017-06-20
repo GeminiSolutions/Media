@@ -13,6 +13,7 @@ public class Media {
 
     public var id: MediaIdType?
     public var lastUpdate: Date?
+    public var contentType: String?
     public var content: DataStoreContent
 
     public init(_ content: DataStoreContent) {
