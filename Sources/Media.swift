@@ -8,17 +8,12 @@
 import Foundation
 import DataStore
 
-public class Media {
+public class Media: DataStoreContentLargeObject {
     public typealias MediaIdType = Int
 
     public var id: MediaIdType?
     public var lastUpdate: Date?
     public var contentType: String?
-    public var content: DataStoreContent
-
-    public init(_ content: DataStoreContent) {
-        self.content = content
-    }
 
     class public func mediaIdFromString(_ string: String) -> MediaIdType? {
         return MediaIdType(string)
