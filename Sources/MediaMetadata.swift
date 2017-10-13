@@ -8,7 +8,7 @@
 import Foundation
 import DataStore
 
-open class MediaMetadata: DataStoreItemsMetadataJSON {
+open class MediaMetadata: DSItemsMetadataJSON {
     public var fields: [[String:Any]]? {
         get {
             return content["fields"] as? [[String:Any]]

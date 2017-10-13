@@ -8,7 +8,7 @@
 import Foundation
 import DataStore
 
-public class Media: DataStoreContentLargeObject {
+public class Media: DSContentLargeObject {
     public typealias MediaIdType = Int
 
     public var id: MediaIdType?
